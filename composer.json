@@ -1,0 +1,12 @@
+{
+    "name": "motwreen/whmcpanel",
+    "description": "motwreen/whmcpanel",
+    "authors": [
+        {
+            "name": "Ahmed Gad",
+            "email": "admin@motwreen.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
