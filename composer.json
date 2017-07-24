@@ -7,6 +7,5 @@
             "email": "admin@motwreen.com"
         }
     ],
-    "minimum-stability": "stable",
     "require": {}
 }
