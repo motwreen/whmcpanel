@@ -22,13 +22,13 @@ or add the following to your `composer.json`
 add the following line to your providers array in `config/app.php` file
 
 ```
-    Motwreen\WHMCPanel\WHMCPanelServiceProvider::class,
+Motwreen\WHMCPanel\WHMCPanelServiceProvider::class,
 ```
 
 and this to aliases
 
 ```
-	'WHMCPanel' => Motwreen\WHMCPanel\WHMCPanelFacade::class,
+'WHMCPanel' => Motwreen\WHMCPanel\WHMCPanelFacade::class,
 ```
 
 
@@ -46,7 +46,7 @@ class TestController extends Controller
 {
 	public function index()
 	{
-        WHMCPanel::listaccts(); \\list all accounts data in server
+		WHMCPanel::listaccts(); \\list all accounts data in server
 	}
 }
 
@@ -93,4 +93,4 @@ class TestController extends Controller
 
 
 ## Note: 
-	I will provide more examples and will develope this package feel free to use,test and develop it .
+I will provide more examples and will develope this package feel free to use,test and develop it .
