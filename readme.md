@@ -6,7 +6,7 @@ run this command in your project root folder
 
 
 ```
-composer require motwreen/whmcpanel
+composer require "motwreen/whmcpanel":"@dev"
 ```
 
 or add the following to your `composer.json`
@@ -15,7 +15,7 @@ or add the following to your `composer.json`
 ```
 {
     "require": {
-        "motwreen/whmcpanel": "^1.0"
+    	"motwreen/whmcpanel":"@dev"
     }
 }
 ```
