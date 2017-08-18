@@ -9,7 +9,7 @@ class WHMCPanelServiceProvider extends ServiceProvider
     {
     	$config = $this->app->make('config');
         $this->mergeConfigFrom(
-            __DIR__ . 'config/whmcpanel.php', 'whmcpanel'
+            __DIR__ . '/config/whmcpanel.php', 'whmcpanel'
         );
 
         $this->app->bind('whmcpanel', function() {
@@ -20,7 +20,7 @@ class WHMCPanelServiceProvider extends ServiceProvider
     public function boot()
     {
          $this->publishes([
-            __DIR__.'config/whmcpanel.php' => config_path('whmcpanel'),
+            __DIR__.'/config/whmcpanel.php' => config_path('whmcpanel'),
         ],'whmcpanel');
     }
 }
