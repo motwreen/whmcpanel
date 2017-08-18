@@ -16,9 +16,8 @@ class WHMCPanelServiceProvider extends ServiceProvider
 
     public function boot()
     {
-    	$this->publishes([
-		    __DIR__.'/../Config/features.php' => config_path('features.php'),
-		]);
-
+         $this->publishes([
+            __DIR__.'config/whmcpanel.php' => config_path('whmcpanel.php'),
+        ],'whmcpanel');
     }
 }
