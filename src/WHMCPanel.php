@@ -44,9 +44,9 @@ class WHMCpanel
 
 	private function bulidUrl()
 	{
-		$server 			= Config::get('services.whm.server');
-		$port 				= Config::get('services.whm.port');
-		$endpoint 			= Config::get('services.whm.endpoint');
+		$server 			= Config::get('whmcpanel.server');
+		$port 				= Config::get('whmcpanel.port');
+		$endpoint 			= Config::get('whmcpanel.endpoint');
 		$url 				= "https://$server:$port/$endpoint/$this->method?api.version=1$this->params";
 		$this->url 			= $url;
 	}
@@ -68,8 +68,8 @@ class WHMCpanel
 
 	private function fire()
 	{
-		$username	= Config::get('services.whm.username');
-		$password	= Config::get('services.whm.password');
+		$username	= Config::get('whmcpanel.username');
+		$password	= Config::get('whmcpanel.password');
 		$curl 		= curl_init();                                // Create Curl Object
 		$header[0] 	= "Authorization: Basic " . base64_encode($username.":".$password) . "\n\r";
 		curl_setopt($curl, CURLOPT_SSL_VERIFYPEER,0);       // Allow self-signed certs
